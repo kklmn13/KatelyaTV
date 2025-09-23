@@ -118,7 +118,6 @@ function handleAuthFailure(
 // 判断是否需要跳过认证的路径
 function shouldSkipAuth(pathname: string): boolean {
   const skipPaths = [
-    '',
     '/douban',
     '/_next',
     '/favicon.ico',
