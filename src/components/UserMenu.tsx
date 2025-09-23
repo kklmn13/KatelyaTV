@@ -126,7 +126,11 @@ export const UserMenu: React.FC = () => {
   }, []);
 
   const handleMenuClick = () => {
-    setIsOpen(!isOpen);
+    if (!authInfo){
+      router.push('/login');
+    }else{
+      setIsOpen(!isOpen);
+    }
   };
 
   const handleCloseMenu = () => {
@@ -350,10 +354,10 @@ export const UserMenu: React.FC = () => {
               <div className='font-semibold text-gray-900 dark:text-gray-100 text-sm truncate'>
                 {authInfo?.username || 'default'}
               </div>
-              <div className='text-[10px] text-gray-400 dark:text-gray-500'>
-                数据存储：
-                {storageType === 'localstorage' ? '本地' : storageType}
-              </div>
+              {/*<div className='text-[10px] text-gray-400 dark:text-gray-500'>*/}
+              {/*  数据存储：*/}
+              {/*  {storageType === 'localstorage' ? '本地' : storageType}*/}
+              {/*</div>*/}
             </div>
           </div>
         </div>

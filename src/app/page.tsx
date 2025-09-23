@@ -23,6 +23,7 @@ import PageLayout from '@/components/PageLayout';
 import PaginatedRow from '@/components/PaginatedRow';
 import { useSite } from '@/components/SiteProvider';
 import VideoCard from '@/components/VideoCard';
+import {getAuthInfoFromBrowserCookie} from "@/lib/auth";
 
 // 主内容区大型 SHTTV Logo 组件
 const MainKatelyaLogo = () => {
@@ -259,6 +260,9 @@ function HomeClient() {
 
   // 处理收藏数据更新的函数
   const updateFavoriteItems = async (allFavorites: Record<string, Favorite>) => {
+    if(!getAuthInfoFromBrowserCookie()){
+      return ;
+    }
     const allPlayRecords = await getAllPlayRecords();
 
     // 根据保存时间排序（从近到远）
