@@ -1,5 +1,5 @@
 -- D1 数据库初始化脚本
--- 用于创建 KatelyaTV 所需的数据表
+-- 用于创建 SHTTV 所需的数据表
 
 -- 用户表
 CREATE TABLE IF NOT EXISTS users (
