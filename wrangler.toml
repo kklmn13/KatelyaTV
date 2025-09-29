@@ -31,7 +31,6 @@ LOG_LEVEL = "info"
 LOG_FORMAT = "json"
 NODE_ENV = "production"
 D1_DATABASE_BINDING = "DB"
-SITE_NAME = "青色の在线影视库"
 
 # 预览环境配置
 [env.preview]
