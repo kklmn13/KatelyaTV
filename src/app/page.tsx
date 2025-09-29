@@ -33,7 +33,7 @@ const MainKatelyaLogo = () => {
       <div className='logo-background-glow'></div>
 
       {/* 主 Logo */}
-      <div className='main-katelya-logo'>SHTTV</div>
+      <div className='main-katelya-logo'>青色の在线影视库</div>
 
       {/* 副标题 */}
       <div className='mt-3 text-center'>
@@ -66,9 +66,9 @@ const BottomKatelyaLogo = () => {
       </div>
 
       <div className='text-center'>
-        <div className='bottom-logo'>SHTTV</div>
+        <div className='bottom-logo'>青色の在线影视库</div>
         <div className='mt-2 text-sm text-gray-500 dark:text-gray-400 opacity-75'>
-          Powered by SHTTV Core
+          Powered by 青色の在线影视库 Core
         </div>
       </div>
     </div>
